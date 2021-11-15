@@ -49,6 +49,21 @@ function isJonAlive(){
 
 function rollDice(){
     let possibleRolls = [1,2,3,4,5,6]
-    let randomNumber = Math.floor(Math.Random() * possibleRolls.length)
+    let randomNumber = Math.floor(Math.random() * possibleRolls.length)
     return possibleRolls[randomNumber]
 }
+
+let firstRoll = rollDice()
+let secondRoll = rollDice()
+
+console.log(firstRoll, secondRoll)
+
+function diceMultiplier(){
+    let firstRoll = rollDice() 
+    let secondRoll = rollDice()
+
+    return firstRoll * secondRoll
+}
+
+let multipliedNum = diceMultiplier()
+console.log(multipliedNum)
