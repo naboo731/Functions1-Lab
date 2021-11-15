@@ -26,23 +26,29 @@ function isJonAlive(){
         console.log("Jon is alive")
     } else console.log("Jon has perished")
 }
-isJonAlive()
+// isJonAlive()
 
 // jonSnowHealth = 0
 // isJonAlive()
 
-function supriseAttack(attackValue){
-    jonSnowHealth -= attackValue
-    isJonAlive()
-}
+// function supriseAttack(attackValue){
+//     jonSnowHealth -= attackValue
+//     isJonAlive()
+// }
 
-supriseAttack(20)
-supriseAttack(12)
-supriseAttack(13)
+// supriseAttack(20)
+// supriseAttack(12)
+// supriseAttack(13)
 // console.log(jonSnowHealth)
 
-function greeting(person1, person2){
-    console.log(`${person1} says 'Hello' to ${person2}`)
-}
+// function greeting(person1, person2){
+    // console.log(`${person1} says 'Hello' to ${person2}`)
+// }
 
-greeting("Evan", "Nicki")
+// greeting("Evan", "Nicki")
+
+function rollDice(){
+    let possibleRolls = [1,2,3,4,5,6]
+    let randomNumber = Math.floor(Math.Random() * possibleRolls.length)
+    return possibleRolls[randomNumber]
+}
